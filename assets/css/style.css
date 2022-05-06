@@ -1,0 +1,112 @@
+
+/*
+* quer dizer que serve para todo o documento
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+criando variaveis
+*/
+:root{
+    --vermelho:red;
+    --preta:black;
+}
+
+/*ELEMENTOS BASE*/
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+}
+
+header .container{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.logo{
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgba(213, 208, 208, 0.634);
+    justify-content: space-between;
+}
+
+header div nav a:hover{
+    color: rgba(243, 236, 236, 0.634);
+}
+
+/*BOX PRINCIPAL*/
+
+.filme-principal{
+    font-size: 20px;
+    background: url("../img/capa1.jpg");
+    width:100%;
+    
+    
+    /*
+    verificar
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)100%);*/
+
+    height: 10%;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 150px;
+}
+
+.titulo{
+    font-size: 50px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0,.50);
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .9s;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+i{
+    margin-right: 15px;
+}
+
+.container2{
+    width: 70%;
+    margin-left: 10px;
+}
+
+.imagem-mini{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.own-carrosel{
+    margin-top: 10px;
+}
